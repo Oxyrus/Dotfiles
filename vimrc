@@ -52,3 +52,5 @@ autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 let NERDTreeMapActivateNode='<L>'
 let NERDTreeIgnore=['\.DS_STORE','\~$','\.swp']
+" close vim if only nerdtree is open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
