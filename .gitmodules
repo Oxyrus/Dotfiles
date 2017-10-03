@@ -10,3 +10,6 @@
 [submodule "/home/andres/.vim/bundle/nerdtree"]
 	path = /home/andres/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = git@github.com:ervandew/supertab.git
