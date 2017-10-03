@@ -4,3 +4,6 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = git@github.com:wincent/command-t.git
+[submodule "bundle/lightline.vim"]
+	path = bundle/lightline.vim
+	url = git@github.com:itchyny/lightline.vim.git

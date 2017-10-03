@@ -42,3 +42,5 @@ set wildignore+=*.log,*.sql,*.cache
 " when a new file is created it's not indexed
 " use SPC r to re index
 noremap <Leader>r :CommandTFlush<CR>
+
+set laststatus=2
