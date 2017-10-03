@@ -6,7 +6,7 @@ syntax on
 colorscheme Tomorrow-Night
 
 set guifont=Menlo\ Regular:h18
-set lines=35 columns=169
+set lines=35 columns=165
 set colorcolumn=90
 set number
 
@@ -35,3 +35,10 @@ nnoremap <Leader><Leader> :e#<CR>
 
 " show matching parenthesis
 set showmatch
+
+" ignore files on search using t command
+set wildignore+=*.log,*.sql,*.cache
+
+" when a new file is created it's not indexed
+" use SPC r to re index
+noremap <Leader>r :CommandTFlush<CR>
