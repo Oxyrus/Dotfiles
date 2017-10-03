@@ -1,6 +1,7 @@
 execute pathogen#infect()
 
 filetype on
+filetype plugin on
 syntax on
 colorscheme Tomorrow-Night
 
