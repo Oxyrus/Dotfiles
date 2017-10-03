@@ -8,13 +8,13 @@
 	path = bundle/lightline.vim
 	url = git@github.com:itchyny/lightline.vim.git
 [submodule "/home/andres/.vim/bundle/nerdtree"]
-	path = /home/andres/.vim/bundle/nerdtree
+	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git@github.com:ervandew/supertab.git
 [submodule "/home/andres/.vim/bundle/vim-javascript"]
-	path = /home/andres/.vim/bundle/vim-javascript
+	path = bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
 [submodule "bundle/emmet-vim"]
 	path = bundle/emmet-vim
@@ -22,3 +22,6 @@
 [submodule "bundle/editorconfig-vim"]
 	path = bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim
+[submodule "bundle/youcompleteme"]
+	path = bundle/youcompleteme
+	url = https://github.com/valloric/youcompleteme
