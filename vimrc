@@ -27,8 +27,9 @@ autocmd BufWritePre * :%s/\s\+$//e
 " hightlight words on search
 set hlsearch
 
+" DISABLED causes weird behaviour when running Vim
 " cancel a search with ESC
-nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
+" nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
 
 " re open previous file
 nnoremap <Leader><Leader> :e#<CR>
@@ -44,3 +45,10 @@ set wildignore+=*.log,*.sql,*.cache
 noremap <Leader>r :CommandTFlush<CR>
 
 set laststatus=2
+
+let NERDTreeShowHidden=1
+nmap <leader>n :NERDTreeToggle<CR>
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
+let NERDTreeMapActivateNode='<L>'
+let NERDTreeIgnore=['\.DS_STORE','\~$','\.swp']

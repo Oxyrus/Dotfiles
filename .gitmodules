@@ -7,3 +7,6 @@
 [submodule "bundle/lightline.vim"]
 	path = bundle/lightline.vim
 	url = git@github.com:itchyny/lightline.vim.git
+[submodule "/home/andres/.vim/bundle/nerdtree"]
+	path = /home/andres/.vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
