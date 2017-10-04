@@ -9,7 +9,7 @@ colorscheme Tomorrow-Night
 set encoding=utf8
 set ffs=unix,dos,mac
 set guifont=Menlo\ Regular:h18
-set lines=35 columns=168
+set lines=36 columns=168
 set colorcolumn=90
 set number
 
@@ -75,7 +75,7 @@ map <leader>h :bprevious<CR>
 map <leader>tn :tabnew<CR>
 map <leader>to :tabonly<CR>
 map <leader>tc :tabclose<CR>
-map <leader>tm :tabmove
+map <leader>tm :tabmove<CR>
 map <leader>t<leader> :tabnext
 
 " toggle between current and previous tab
