@@ -4,7 +4,8 @@ filetype on
 filetype plugin on
 filetype indent on
 syntax on
-colorscheme Tomorrow-Night
+" colorscheme Tomorrow-Night
+colorscheme gruvbox
 
 set encoding=utf8
 set ffs=unix,dos,mac
@@ -83,3 +84,6 @@ map <leader>t<leader> :tabnext
 let g:lasttab=1
 nmap <leader>tl :exe "tabn ".g:lasttab<CR>
 au TabLeave * let g:lasttab = tabpagenr()
+
+" autocomplete window closes when you select an option
+let g:ycm_autoclose_preview_window_after_completion=1
