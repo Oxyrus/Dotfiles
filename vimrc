@@ -24,6 +24,7 @@ Plugin 'godlygeek/tabular' " align text using regex
 Plugin 'benmills/vimux' " Vim + Tmux
 Plugin 'jeetsukumaran/vim-buffergator' " Movement between buffers
 Plugin 'Shougo/neocomplete.vim' " Autocompletion
+Plugin 'editorconfig/editorconfig-vim'
 
 " Generic programming support
 Plugin 'jiangmiao/auto-pairs' " Close brackets, parenthesis and what not
@@ -37,6 +38,8 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'tpope/vim-fugitive'
 
 Plugin 'morhetz/gruvbox'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()
 filetype plugin indent on
