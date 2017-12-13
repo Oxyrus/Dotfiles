@@ -30,6 +30,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'jiangmiao/auto-pairs' " Close brackets, parenthesis and what not
 Plugin 'maksimr/vim-jsbeautify' " Format the code using the .editorconfig
 Plugin 'vim-syntastic/syntastic' " Syntax checking
+Plugin 'fatih/vim-go' " Go support
 
 " Markdown and writing
 Plugin 'plasticboy/vim-markdown'
