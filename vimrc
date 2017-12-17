@@ -29,8 +29,13 @@ Plugin 'editorconfig/editorconfig-vim'
 " Generic programming support
 Plugin 'jiangmiao/auto-pairs' " Close brackets, parenthesis and what not
 Plugin 'maksimr/vim-jsbeautify' " Format the code using the .editorconfig
-Plugin 'vim-syntastic/syntastic' " Syntax checking
+" Plugin 'vim-syntastic/syntastic' " Syntax checking
 Plugin 'fatih/vim-go' " Go support
+Plugin 'w0rp/ale' " Async Lint Engine
+Plugin 'Chiel92/vim-autoformat' " Autoformat my ugly code
+
+" Python
+Plugin 'fisadev/vim-isort'
 
 " Markdown and writing
 Plugin 'plasticboy/vim-markdown'
@@ -54,14 +59,14 @@ let g:neocomplete#enable_at_startup = 1 " Enable neocomplete at startup
 let g:neocomplete#enable_smart_case = 1
 
 " Settings for syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
 
 let mapleader = " "
 map <leader>s :source ~/.vimrc<CR>
@@ -111,3 +116,9 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
+" autoformat code on save
+au BufWrite * :Autoformat
+
+" visual mode sorter
+let g:vim_isort_map = '<C-i>'
